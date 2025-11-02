@@ -69,7 +69,7 @@ your_project/
 ---
 
 ## Notes:
-- The model is located in `/models/yolov8n_openvino/`
+- The model is located in `/models/yolov8n/`
 - Ensure your video files are reasonable size (<100MB) for best speed.
 - Processing is done with CPU by default; GPU is optional.
 
@@ -114,7 +114,7 @@ Navigate to **Upload Page**, upload Image or Video, and detection will display d
 - Option to Upload Another File or Logout.
 
 ## Model Information
-- **Model**: YOLOv8m
+- **Model**: YOLOv8n
 - **Framework**: OpenVINO runtime (CPU optimized)
 - **Performance**: Very high-speed detection with improved bounding box stability and accuracy.
 - **Input Size**: Automatically resized based on media input.
