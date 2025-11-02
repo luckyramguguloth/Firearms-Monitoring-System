@@ -74,7 +74,7 @@ your_project/
 ## result:
 
 
-https://github.com/user-attachments/assets/43b96547-a15d-4cf2-ad0b-b34951e51b09
+![firearms2_result](https://github.com/user-attachments/assets/8739eb0e-f2fa-46ff-bfb8-d3f0ebde58c1)
 
 
 
