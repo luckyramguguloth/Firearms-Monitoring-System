@@ -1,0 +1,15 @@
+Flask
+Flask-Login
+Flask-WTF
+Flask-Bcrypt
+Flask-SQLAlchemy
+PyMySQL
+email_validator
+flask-migrate
+ultralytics
+torch 
+torchvision
+
+
+
+
