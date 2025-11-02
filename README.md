@@ -1,2 +1,121 @@
-# Firearms-Monitoring-System
-an AI-based firearm detection system uses YOLOv8  a real-time object detection model, Detects firearms in videos and images, making surveillance more intelligent and responsive. •Built using Flask (Python web framework) with SQLAlchemy ORM, SQLite, and HTML/CSS for frontend.
+# Firearm Detection Web App
+
+Introduction
+This project is a web application for detecting firearms in uploaded images or videos, built using:
+- YOLOv8m object detection model (optimized for faster and stable inference)
+- OpenVINO runtime for accelerated inference on CPU
+- Flask for the web server
+- HTML5 for UI pages
+
+Users can simply upload media files through the browser, and the app will perform firearm detection and display the results along with detection performance (FPS), with bounding boxes and confidence scores drawn accurately.
+
+## Project Structure
+```
+your_project/
+├── run.py
+├── app/
+│   ├── __init__.py
+│   ├── auth/
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   ├── yolo/
+│   │   ├── __init__.py
+│   │   ├── detector.py    # Optimized YOLOv8m detection
+│   ├── detect/
+│   │   ├── __init__.py
+│   │   ├── detect.py      # Upload and detection routes
+│   ├── static/
+│   │   ├── uploads/       # Uploaded media files
+│   │   ├── results/       # Processed detection outputs
+│   ├── templates/
+│   │   ├── login.html
+│   │   ├── dashboard.html
+│   │   ├── upload.html
+│   │   ├── result.html    # Displays analyzed media directly
+├── models/
+│   ├── yolov8m/
+│   │   ├── yolov8m.xml
+│   │   ├── yolov8m.bin
+├── requirements.txt
+├── README.md
+```
+
+
+## Major Changes:
+- ✅ Upgraded to **YOLOv8n OpenVINO** for super-fast detections
+- ✅ Frame skipping (every 5 frames) for fast video processing
+- ✅ Live analyzed video plays on the webpage directly (no need to open file manually)
+- ✅ Processing time optimized (13MB video analyzed in <45 seconds)
+
+## How to run:
+
+1. Activate virtual environment
+2. Install requirements:
+    ```
+    pip install flask openvino opencv-python
+    ```
+3. Start the server:
+    ```
+    python run.py
+    ```
+4. Go to `http://127.0.0.1:5000/dashboard`
+5. Upload image or video → get results instantly!
+
+---
+
+## Notes:
+- The model is located in `/models/yolov8n_openvino/`
+- Ensure your video files are reasonable size (<100MB) for best speed.
+- Processing is done with CPU by default; GPU is optional.
+
+---
+
+
+3. Setup Virtual Environment (optional)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+4. Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+## How to Run
+Run the Flask app:
+
+```bash
+python run.py
+```
+
+Open your browser at:
+
+```
+http://127.0.0.1:5000/
+```
+
+Login using the dummy credentials (edit in code if needed).  
+Navigate to **Upload Page**, upload Image or Video, and detection will display directly inside the browser with FPS information.
+
+## Usage Guide
+- Login -> enter credentials.
+- Dashboard -> Upload Media (image or video).
+- Detection Results -> Displays detected media inside browser (image or playable video).
+- Shows performance: FPS (frames per second).
+- Option to Upload Another File or Logout.
+
+## Model Information
+- **Model**: YOLOv8m
+- **Framework**: OpenVINO runtime (CPU optimized)
+- **Performance**: Very high-speed detection with improved bounding box stability and accuracy.
+- **Input Size**: Automatically resized based on media input.
+
+## Notes
+- App is optimized for CPU inference using OpenVINO.
+- Bounding boxes drawn smoothly with confidence scores above 0.5 threshold.
+- Processed videos/images are stored inside `/static/results/`.
+- No need to manually open results folder — everything displayed in browser directly.
