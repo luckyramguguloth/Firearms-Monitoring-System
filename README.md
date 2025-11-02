@@ -71,13 +71,6 @@ your_project/
 ---
 <img width="1920" height="1020" alt="Screenshot 2025-05-02 061044" src="https://github.com/user-attachments/assets/2caeb7cf-6a79-4409-815a-e2b7c44243a0" />
 
-## result:
-
-
-![firearms2_result](https://github.com/user-attachments/assets/8739eb0e-f2fa-46ff-bfb8-d3f0ebde58c1)
-
-
-
 
 ## Notes:
 - The model is located in `/models/yolov8n/`
