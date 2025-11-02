@@ -9,6 +9,8 @@ This project is a web application for detecting firearms in uploaded images or v
 
 Users can simply upload media files through the browser, and the app will perform firearm detection and display the results along with detection performance (FPS), with bounding boxes and confidence scores drawn accurately.
 
+<img width="1920" height="1020" alt="Screenshot 2025-05-02 060931" src="https://github.com/user-attachments/assets/35794cba-4075-4303-bd93-68c63d6dc9da" />
+
 ## Project Structure
 ```
 your_project/
