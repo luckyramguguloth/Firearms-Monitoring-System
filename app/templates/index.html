@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon Detection System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Weapon Detection</a>
+            <div class="ms-auto">
+                <a href="{{ url_for('auth.login') }}" class="btn btn-outline-light">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="container text-center fade-in py-5">
+        <h1 class="display-4 mb-3">Firearm & Object Detection System</h1>
+        <p class="lead mb-4">
+            An AI-powered real-time system designed to detect and classify firearms and other objects using YOLOv8 — enhancing surveillance and safety monitoring across public and private environments.
+        </p>
+
+        <hr class="my-4">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-start">
+                <h3 class="mb-3 text-accent">🔍 Project Theme</h3>
+                <p>
+                    Firearm-related incidents have grown rapidly across the globe, posing serious threats to public safety in schools, airports, malls, and public transport systems. This system aims to mitigate such threats by:
+                </p>
+                <ul>
+                    <li>⚠️ Identifying firearms and dangerous objects in surveillance footage</li>
+                    <li>🧠 Enhancing security automation with AI-based detection</li>
+                    <li>📡 Supporting law enforcement with fast visual analysis</li>
+                </ul>
+
+                <h3 class="mt-5 mb-3 text-accent">🛠 Technologies Used</h3>
+                <ul>
+                    <li>🔹 Python (Flask Web Framework)</li>
+                    <li>🔹 Ultralytics YOLOv8 (Fine-tuned)</li>
+                    <li>🔹 OpenCV for real-time video/image processing</li>
+                    <li>🔹 Flask-Login for user authentication</li>
+                    <li>🔹 MySQL (via XAMPP) for user registration & management</li>
+                    <li>🔹 HTML5, CSS3, Bootstrap 5</li>
+                </ul>
+
+                <h3 class="mt-5 mb-3 text-accent">🚨 Real-World Challenges Solved</h3>
+                <ul>
+                    <li>🔥 Difficulty in manually monitoring large camera networks</li>
+                    <li>🔫 Delay in identifying firearms in public areas</li>
+                    <li>📉 Inaccuracy of traditional motion-based detection systems</li>
+                </ul>
+
+                <div class="text-center mt-5">
+                    <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg shadow">🔐 Login to Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            &copy; 2025 Firearm Detection Project. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

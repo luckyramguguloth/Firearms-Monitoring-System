@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<div class="d-grid gap-2 d-md-block">
+    <a href="{{ url_for('admin.view_users') }}" class="btn btn-outline-primary">View Users</a>
+    <a href="{{ url_for('admin.prediction_logs') }}" class="btn btn-outline-secondary">Predicted Logs</a>
+    <a href="{{ url_for('admin.export_csv') }}" class="btn btn-outline-success">Export CSV</a>
+    <a href="{{ url_for('admin.accuracy_graph') }}" class="btn btn-outline-info">Line Graph</a>
+</div>
+{% endblock %}
