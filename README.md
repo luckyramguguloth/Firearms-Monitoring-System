@@ -18,24 +18,29 @@ your_project/
 │   ├── auth/
 │   │   ├── __init__.py
 │   │   ├── routes.py
+|   ├── models/
+|   ├── ├── user.py
 │   ├── yolo/
-│   │   ├── __init__.py
 │   │   ├── detector.py    # Optimized YOLOv8m detection
-│   ├── detect/
-│   │   ├── __init__.py
+│   ├── routes/
 │   │   ├── detect.py      # Upload and detection routes
 │   ├── static/
 │   │   ├── uploads/       # Uploaded media files
 │   │   ├── results/       # Processed detection outputs
+|   |   ├── css/
 │   ├── templates/
 │   │   ├── login.html
 │   │   ├── dashboard.html
+│   │   ├── index.html
+│   │   ├── layout.html
+│   │   ├── register.html
+│   │   ├── user_details
 │   │   ├── upload.html
 │   │   ├── result.html    # Displays analyzed media directly
-├── models/
-│   ├── yolov8m/
-│   │   ├── yolov8m.xml
-│   │   ├── yolov8m.bin
+├── model_weights/
+│   ├── trained_models/
+│   │   ├── weights/
+│   │   ├── files
 ├── requirements.txt
 ├── README.md
 ```
