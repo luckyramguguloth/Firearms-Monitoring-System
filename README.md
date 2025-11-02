@@ -66,7 +66,9 @@ your_project/
 4. Go to `http://127.0.0.1:5000/dashboard`
 5. Upload image or video → get results instantly!
 
+
 ---
+<img width="1920" height="1020" alt="Screenshot 2025-05-02 061044" src="https://github.com/user-attachments/assets/2caeb7cf-6a79-4409-815a-e2b7c44243a0" />
 
 ## Notes:
 - The model is located in `/models/yolov8n/`
