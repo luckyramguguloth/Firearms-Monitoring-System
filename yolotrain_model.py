@@ -3,7 +3,7 @@ from datetime import datetime
 from ultralytics import YOLO
 
 # === CONFIGURATION ===
-yaml_file = r"C:\Users\laxma\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\Separated\dataset_prepared\data.yaml"  # Replace with actual YAML path
+yaml_file = r"C:\Users\user\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\Separated\dataset_prepared\data.yaml"  # Replace with actual YAML path
 base_model = "yolov8n.pt"        # Smallest, lightest base model
 
 # === TRAINING LIMITS ===
