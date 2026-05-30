@@ -3,10 +3,10 @@ import os
 from ultralytics import YOLO
 
 # Load models
-model_firearm = YOLO(r"C:\Users\laxma\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\model_weights\v_cpu_e10_img416_b4_20250430_2024112\weights\best.pt")      # Fine-tuned model
+model_firearm = YOLO(r"C:\Users\user\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\model_weights\v_cpu_e10_img416_b4_20250430_2024112\weights\best.pt")      # Fine-tuned model
 model_firearm.fuse()  # Fuse model layers for faster inference
 
-model_coco = YOLO(r"C:\Users\laxma\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\yolov8n.pt")    # COCO model
+model_coco = YOLO(r"C:\Users\user\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\yolov8n.pt")    # COCO model
 model_coco.fuse()  # Fuse model layers for faster inference
 
 
