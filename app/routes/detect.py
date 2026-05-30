@@ -9,8 +9,8 @@ from flask_login import current_user
 
 detect_bp = Blueprint("detect", __name__)
 
-UPLOAD_FOLDER = r"C:\Users\laxma\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\app\static\uploads"
-RESULT_FOLDER = r"C:\Users\laxma\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\app\static\results"
+UPLOAD_FOLDER = r"C:\Users\user\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\app\static\uploads"
+RESULT_FOLDER = r"C:\Users\user\Desktop\projects\myprojects\FIREARMS_FOR_MAJOR\FILES2\app\static\results"
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
