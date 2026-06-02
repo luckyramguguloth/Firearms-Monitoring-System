@@ -1,4 +1,4 @@
-# Firearm Detection Web App
+# Firearm Detection Web 
 
 Introduction
 This project is a web application for detecting firearms in uploaded images or videos, built using:
