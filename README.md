@@ -45,7 +45,7 @@ your_project/
 ├── requirements.txt
 ├── README.md
 ```
-
+**##add disticts paths in files accordingly**
 
 ## Major Changes:
 - ✅ Upgraded to **YOLOv8n OpenVINO** for super-fast detections
